@@ -4,13 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aellstillyearn</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+
+        /* HEADER */
+        header {
+            background: #111;
+            padding: 20px;
+            font-size: 1.2em;
+            letter-spacing: 2px;
+            color: #ff4d6d;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        /* PROFILE IMAGE */
+        img {
+            margin-top: 30px;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #ff4d6d;
+            box-shadow: 0 0 20px rgba(255, 77, 109, 0.6);
+            transition: 0.4s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2em;
+        }
+
+        p {
+            opacity: 0.7;
+            margin: 5px 0;
+        }
+
+        .desc {
+            margin-top: 10px;
+            font-size: 0.95em;
+            color: #ccc;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            background: #ff4d6d;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ff1e4d;
+            transform: scale(1.1);
+        }
+
+        .hidden-text {
+            display: none;
+            margin-top: 15px;
+            color: #ffd6e0;
+        }
+    </style>
 </head>
+
 <body>
-     <h1>Muhammad Slamet Nur Alif</h1>
+
+    <header>
+        AELLSTILLYEARN
+    </header>
+
+    <img src="Fall/jawa.png" alt="profile">
+
+    <h1>Muhammad Slamet Nur Alif</h1>
     <p>Informatika</p>
-    <div>
-        nekstim kita kasih kejutan.
+
+    <div class="desc">
+        just a person who builds things quietly and disappears.
     </div>
-    <img src="Fall/jawa.png" alt="mana dokslinya wok"  width=“250”>
+
+    <button onclick="showText()">klik</button>
+
+    <div class="hidden-text" id="text">
+        💖 nekstim kita kasih kejutan 💖
+    </div>
+
+    <script>
+        function showText() {
+            document.getElementById("text").style.display = "block";
+        }
+    </script>
+
 </body>
-</html>                     
+</html>
