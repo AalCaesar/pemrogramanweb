@@ -4,137 +4,235 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Aipp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         html {
             scroll-behavior: smooth;
         }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 20px;
-            background-color: #f4f4f9;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-attachment: fixed;
             color: #333;
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
         }
+
+        .glass-container {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+
         header {
             text-align: center;
-            padding: 20px 0;
-            background: #2c3e50;
+            padding: 40px 0;
+            background: rgba(44, 62, 80, 0.9);
             color: white;
-            border-radius: 10px;
-            margin-bottom: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
+
         nav {
             text-align: center;
             position: sticky;
-            top: 0;
-            background: rgba(244, 244, 249, 0.9);
-            padding: 10px 0;
+            top: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(5px);
+            padding: 15px 0;
             z-index: 1000;
+            border-radius: 50px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
+
         nav a {
             text-decoration: none;
-            color: #3498db;
+            color: #4a148c;
             margin: 0 15px;
             font-weight: bold;
+            transition: 0.3s;
         }
+
+        nav a:hover {
+            color: #764ba2;
+            transform: translateY(-2px);
+            display: inline-block;
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
         .profile-img {
             display: block;
-            margin: 0 auto;
-            border: 5px solid #fff;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 0 auto 20px;
+            border: 6px solid #fff;
+            /* ✅ Shadow Modern */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: transform 0.5s ease;
         }
+
+        .profile-img:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            border-left: 5px solid #764ba2;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
         .project-gallery {
             display: flex;
-            gap: 15px;
+            gap: 20px;
             justify-content: center;
             flex-wrap: wrap;
-            margin-top: 20px;
+            margin-top: 25px;
         }
+
+        .project-gallery img, .project-gallery video {
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .project-gallery img:hover {
+            transform: scale(1.03);
+        }
+
         form {
             background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             margin-top: 40px;
         }
+
         input, textarea {
             width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            padding: 12px;
+            margin-top: 8px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
             box-sizing: border-box;
+            transition: 0.3s;
         }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #764ba2;
+            box-shadow: 0 0 8px rgba(118, 75, 162, 0.2);
+        }
+
         input[type="submit"] {
-            background-color: #27ae60;
+            background: linear-gradient(to right, #667eea, #764ba2);
             color: white;
             border: none;
             cursor: pointer;
             font-weight: bold;
-            margin-top: 10px;
-            padding: 10px;
+            margin-top: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            transition: 0.3s;
         }
+
+        input[type="submit"]:hover {
+            filter: brightness(1.1);
+            letter-spacing: 1px;
+            box-shadow: 0 5px 15px rgba(118, 75, 162, 0.4);
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px 0;
+            color: white;
+            font-weight: 300;
+        }
+
+        h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .icon { margin-right: 10px; color: #764ba2; }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to My Portofolio</h1>
-    </header>
+    <div class="glass-container">
+        <header>
+            <h1>Welcome to My Portofolio</h1>
+        </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="#about"><i class="fas fa-user"></i> About</a>
+            <a href="#contact"><i class="fas fa-paper-plane"></i> Contact</a>
+        </nav>
 
-    <div style="text-align: center;">
-        <img src="Fall/aell.png" alt="My Mine" class="profile-img" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;">
-        <h2>Muhammad Slamet Nur Alif</h2>
-        <p>Holla Saya Aipp, Mahasiswa Informatika</p>
+        <div class="profile-section">
+            <img src="Fall/aell.png" alt="My Mine" class="profile-img" style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover;">
+            <h2>Muhammad Slamet Nur Alif</h2>
+            <p><i class="fas fa-graduation-cap icon"></i>Holla Saya Aipp, Mahasiswa Informatika</p>
+        </div>
+
+        <div class="card" id="about">
+            <h2><i class="fas fa-bolt icon"></i>Skills</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li><i class="fas fa-camera icon"></i>Photography</li>
+                <li><i class="fas fa-video icon"></i>Cinematography</li> 
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-folder-open icon"></i>Project Gallery</h2>
+            <ol>
+                <li>Short Video</li> 
+                <li>Photography</li> 
+            </ol>
+
+            <div class="project-gallery">
+                <video width="100%" style="max-width: 640px;" controls>
+                    <source src="Fall/shortvid.mp4" type="video/mp4">
+                </video>
+                <img src="Fall/ntr1.png" width="200px" alt="Concert">
+                <img src="Fall/ntr2.png" width="200px" alt="Nature">
+                <img src="Fall/ntr3.png" width="200px" alt="Travel">
+            </div>
+        </div>
+
+        <form id="contact" action="/submit" method="post">
+            <h3><i class="fas fa-envelope-open-text icon"></i>Contact Me</h3>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="massage">Message</label>
+            <textarea id="massage" name="massage" rows="4" placeholder="Write your message here..." required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
     </div>
 
-    <hr>
-
-    <h2 id="about">Skills</h2>
-    <ul>
-        <li>Photography</li>
-        <li>Cinematography</li> 
-    </ul>
-
-    <h2>Project Gallery</h2>
-    <ol>
-        <li>ShortVideo</li> 
-        <li>Photography</li> 
-    </ol>
-
-    <div class="project-gallery">
-        <video width="640" height="360" controls>
-        <source src="Fall/shortvid.mp4" type="video/mp4"><br>
-        </video>
-        <img src="Fall/ntr1.png" width="200px" alt="Concert">
-        <img src="Fall/ntr2.png" width="200px" alt="Nature">
-        <img src="Fall/ntr3.png" width="200px" alt="Travel">
-    </div>
-
-    <form id="contact" action="/submit" method="post">
-        <h3>Contact Me</h3>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="massage">Massage</label><br>
-        <textarea id="massage" name="massage" rows="4" cols="50" required></textarea><br><br>
-
-        <input type="submit" value="Submit">
-    </form>
-
-    <footer style="text-align: center; padding: 40px 0; color: #888;">
+    <footer>
         &copy; 2026 Muhammad Slamet Nur Alif
     </footer>
 
