@@ -21,7 +21,6 @@ body {
     text-align: center;
 }
 
-/* HEADER */
 header {
     padding: 18px;
     font-size: 0.9em;
@@ -86,7 +85,6 @@ p {
     backdrop-filter: blur(10px);
 }
 
-/* BUTTON PLAY */
 button {
     margin-top: 10px;
     width: 100%;
@@ -125,7 +123,6 @@ button:hover {
     Me and my music taste against the world
 </div>
 
-<!-- MUSIC -->
 <div class="music">
     <p style="opacity:0.7; font-size:0.85em;">
         The Man Who Can’t Be Moved
@@ -136,6 +133,10 @@ button:hover {
     </audio>
 
     <button id="btn">▶ Play</button>
+</div>
+
+<div class="go-portfolio">
+    <a href="portofolio.html">Portofolio</a>
 </div>
 
 <script>
@@ -151,6 +152,7 @@ btn.addEventListener("click", () => {
         btn.innerText = "▶ Play";
     }
 });
+
 </script>
 
 </body>
