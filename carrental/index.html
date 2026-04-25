@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<!-- HEADER -->
+<header class="navbar">
+    <h2 class="logo">CarRental</h2>
+    <nav>
+        <a href="#search">Home</a>
+        <a href="#cars">Cars</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
 <body>
     <div id="search">
         <div class="title">
@@ -35,29 +45,57 @@
             <button type="submit">Search</button>
         </div>
     </div>
-
+    
+    <section id="cars">
     <div class="car-list">
         <h2>Car List</h2>
         <div class="car-item">
-            <img src="https://i.pinimg.com/1200x/7c/08/e6/7c08e6bd5e9916ecef2e2e600828338c.jpg" alt="Car 1">
-            <h3>Car 1</h3>
-            <p>Car Detail</p>
+            <img src="https://i.pinimg.com/736x/7a/0a/ac/7a0aace88d04189ac2afcf76a61a358a.jpg" alt="Car 1">
+            <h3>2002 Nissan Skyline GT-R R34</h3>
+            <p>2.0L engine, 240 HP, high-revving performance beast.</p>
+            <span class="price">Rp 7.000.000 / hari</span>
         </div>
+
         <div class="car-item">
-            <img src="https://i.pinimg.com/1200x/7f/62/c5/7f62c56d673a9e468d1f7ab864922096.jpg" alt="Car 2">
-            <h3>Car 2</h3>
-            <p>Car Detail</p>
+            <img src="https://i.pinimg.com/736x/14/8e/cc/148ecc97f7204242e20af1c6fcc6afc7.jpg" alt="Car 2">
+            <h3>1970 Dodge Challenger</h3>
+            <p>Classic muscle car with legendary V8 power.</p>
+            <span class="price">Rp 9.800.000 / hari</span>
         </div>
+
         <div class="car-item">
-            <img src="https://i.pinimg.com/736x/99/47/5b/99475bc2042e9b0a6ddb119b397fa958.jpg" alt="Car 2">
-            <h3>Car 2</h3>
-            <p>Car Detail</p>
+            <img src="https://i.pinimg.com/1200x/07/23/56/072356e53f23b6a1788dd54df2a7180a.jpg" alt="Car 3">
+            <h3>1994 Toyota Supra JZA80</h3>
+            <p>2JZ-GTE twin turbo, iconic JDM legend.</p>
+            <span class="price">Rp 7.500.000 / hari</span>
         </div>
+
         <div class="car-item">
-            <img src="https://i.pinimg.com/1200x/7c/4c/75/7c4c753add52186c60ac175db48b2fc9.jpg" alt="Car 2">
-            <h3>Car 2</h3>
-            <p>Car Detail</p>
+            <img src="https://i.pinimg.com/1200x/fc/fd/0f/fcfd0f96cc9237c494d59b0b69222adc.jpg" alt="Car 4">
+            <h3>2000 Honda S2000</h3>
+            <p>High-revving VTEC engine, pure driving feel.</p>
+            <span class="price">Rp 8.000.000 / hari</span>
         </div>
+
+    </div> 
+  
+    <section id="contact">
+        <div class="contact-us">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="input-wrapper">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-wrapper">
+                    <textarea rows="4" placeholder="Your Message..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
     </div>
 </body>
 
