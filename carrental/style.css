@@ -214,6 +214,10 @@ select option {
     text-align: center;
 }
 
+.contact-us h2 {
+    color: rgb(255, 255, 255);
+}
+
 /* BUTTON */
 .rent-btn {
     margin-bottom: 1em;
@@ -243,5 +247,6 @@ select option {
     input, select {
         width: 100%;
     }
+ 
 
 }
