@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: white;
+}
+
+header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff3c78;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff3c78;
+}
+
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+    url('https://i.pinimg.com/1200x/f3/b2/3b/f3b23b82a1a536807aab03334ea61b75.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #ff3c78;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff1f5f;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 10%;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #1d1d1d;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    color: #ff3c78;
+}
+
+.page-content {
+    padding: 60px 10%;
+}
+
+.page-content h1 {
+    margin-bottom: 20px;
+    color: #ff3c78;
+}
+
+.about-img {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.ticket-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.ticket-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ticket-card {
+    background-color: #1d1d1d;
+    padding: 25px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.ticket-card h2 {
+    color: #ff3c78;
+    margin-bottom: 15px;
+}
+
+.ticket-card p {
+    margin-bottom: 10px;
+}
+
+.ticket-card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff3c78;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 12px;
+    border: none;
+    background-color: #ff3c78;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
