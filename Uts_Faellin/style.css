@@ -174,3 +174,52 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
+
+
+@media screen and (max-width: 768px) {
+    
+    header {
+        flex-direction: column; 
+        padding: 15px 5%;
+        gap: 15px; 
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 5px 10px;
+        font-size: 14px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+        line-height: 1.2;
+        padding: 0 10px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+    .page-content h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .btn {
+        display: inline-block;
+        width: 80%; 
+        padding: 12px 0;
+    }
+}
